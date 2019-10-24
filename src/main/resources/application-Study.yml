@@ -1,0 +1,38 @@
+#语法：层级关系的key: __ value: __
+server:
+  port: 8083
+  #普通数据配置
+name: zhangsan
+
+#对象的配置
+person:
+  name: lisi
+  age: 18
+  addr: beijing
+
+#对象的行内配置，类似json格式
+#student: {name: anndy,age: 20,addr: shanghai}
+
+#配置数组List,Set,集合（普通字符串）：-空格
+city:
+  - beijing
+  - chongqing
+  - guangzhou
+  - shanghai
+
+#行内配置
+#city: [beijing,chongqing,guangzhou,shanghai]
+
+#配置数组List,Set,集合(对象数据)：-空格
+student1:
+  - name: jack
+    age: 17
+    addr: tianjing
+
+  - name: tom
+    age: 18
+    addr: hangzhou
+#行内
+#student: [{name: jack,age: 17,addr: tianjing},{name: tom,age: 18,addr: hangzhou}]
+
+#Map配置
